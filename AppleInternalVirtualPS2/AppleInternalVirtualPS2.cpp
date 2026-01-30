@@ -5,7 +5,7 @@
 #include "AppleInternalUserClient.hpp"
 #define super IOHIDDevice
 OSDefineMetaClassAndStructors(AppleInternalVirtualPS2, IOHIDDevice)
-
+AppleInternalVirtualPS2* gSharedInstance = nullptr;
 bool AppleInternalVirtualPS2::init(OSDictionary* dict) {
     if (!super::init(dict)) return false;
     static int instanceCount = 0;
@@ -19,7 +19,7 @@ bool AppleInternalVirtualPS2::handleStart(IOService *provider) {
     if (!super::handleStart(provider)) {
         return false;
     }
-
+    gSharedInstance = this;
     setProperty("AppleVendorSupported", kOSBooleanTrue);
     setProperty("Built-In", kOSBooleanTrue);
     setProperty("HIDDefaultBehavior", kOSBooleanTrue);

@@ -37,9 +37,27 @@
 			<key>IOUserClientClass</key>
 			<string>AppleInternalUserClient</string>
 		</dict>
+		<key>PS2EventInterceptor</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+			<key>IOClass</key>
+			<string>PS2EventInterceptor</string>
+			<key>IONameMatch</key>
+			<array>
+				<string>PNP0303</string>
+				<string>applewm0</string>
+			</array>
+			<key>IOProbeScore</key>
+			<integer>200000</integer>
+			<key>IOProviderClass</key>
+			<string>IOACPIPlatformDevice</string>
+		</dict>
 	</dict>
 	<key>OSBundleLibraries</key>
 	<dict>
+		<key>com.apple.iokit.IOACPIFamily</key>
+		<string>1.0.0</string>
 		<key>com.apple.iokit.IOHIDFamily</key>
 		<string>2.0</string>
 		<key>com.apple.kpi.iokit</key>

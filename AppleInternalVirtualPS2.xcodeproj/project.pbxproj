@@ -13,6 +13,8 @@
 		92125BDD2F2C5C200040E66B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92125BDC2F2C5C200040E66B /* Preview Assets.xcassets */; };
 		92125BE22F2C5C330040E66B /* HIDUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92125BC82F2C56420040E66B /* HIDUsage.swift */; };
 		92125BE32F2C5C360040E66B /* KeyboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92125BCD2F2C59060040E66B /* KeyboardController.swift */; };
+		92125BE62F2C63140040E66B /* PS2EventInterceptor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92125BE42F2C63140040E66B /* PS2EventInterceptor.cpp */; };
+		92125BE72F2C63140040E66B /* PS2EventInterceptor.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 92125BE52F2C63140040E66B /* PS2EventInterceptor.hpp */; };
 		922607A62F2A085A00CBF25C /* AppleInternalVirtualPS2.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 922607A52F2A085A00CBF25C /* AppleInternalVirtualPS2.hpp */; };
 		922607A82F2A085A00CBF25C /* AppleInternalVirtualPS2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 922607A72F2A085A00CBF25C /* AppleInternalVirtualPS2.cpp */; };
 		922607B12F2A0DB100CBF25C /* AppleInternalIdentity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 922607AF2F2A0DB100CBF25C /* AppleInternalIdentity.cpp */; };
@@ -23,23 +25,6 @@
 		92D0DFC22F2B028200628E3E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92D0DFC12F2B028200628E3E /* main.cpp */; };
 		92D0DFC92F2B02DE00628E3E /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D0DFC82F2B02DE00628E3E /* IOKit.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		92125BAE2F2C55FD0040E66B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 922607992F2A085A00CBF25C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 92125B9C2F2C55FB0040E66B;
-			remoteInfo = testui;
-		};
-		92125BB82F2C55FD0040E66B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 922607992F2A085A00CBF25C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 92125B9C2F2C55FB0040E66B;
-			remoteInfo = testui;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		92D0DFBD2F2B028200628E3E /* CopyFiles */ = {
@@ -54,9 +39,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		92125B9D2F2C55FB0040E66B /* testui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testui.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		92125BAD2F2C55FD0040E66B /* testuiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testuiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		92125BB72F2C55FD0040E66B /* testuiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testuiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92125BC82F2C56420040E66B /* HIDUsage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIDUsage.swift; sourceTree = "<group>"; };
 		92125BCA2F2C57070040E66B /* YourProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YourProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		92125BCD2F2C59060040E66B /* KeyboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardController.swift; sourceTree = "<group>"; };
@@ -66,6 +48,8 @@
 		92125BD92F2C5C200040E66B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92125BDC2F2C5C200040E66B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		92125BDE2F2C5C200040E66B /* virtualkeyboardapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = virtualkeyboardapp.entitlements; sourceTree = "<group>"; };
+		92125BE42F2C63140040E66B /* PS2EventInterceptor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PS2EventInterceptor.cpp; sourceTree = "<group>"; };
+		92125BE52F2C63140040E66B /* PS2EventInterceptor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PS2EventInterceptor.hpp; sourceTree = "<group>"; };
 		922607A22F2A085A00CBF25C /* AppleInternalVirtualPS2.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleInternalVirtualPS2.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		922607A52F2A085A00CBF25C /* AppleInternalVirtualPS2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AppleInternalVirtualPS2.hpp; sourceTree = "<group>"; };
 		922607A72F2A085A00CBF25C /* AppleInternalVirtualPS2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AppleInternalVirtualPS2.cpp; sourceTree = "<group>"; };
@@ -81,27 +65,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		92125B9A2F2C55FB0040E66B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		92125BAA2F2C55FD0040E66B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		92125BB42F2C55FD0040E66B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		92125BD02F2C5C1F0040E66B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -167,9 +130,6 @@
 			children = (
 				922607A22F2A085A00CBF25C /* AppleInternalVirtualPS2.kext */,
 				92D0DFBF2F2B028200628E3E /* test */,
-				92125B9D2F2C55FB0040E66B /* testui.app */,
-				92125BAD2F2C55FD0040E66B /* testuiTests.xctest */,
-				92125BB72F2C55FD0040E66B /* testuiUITests.xctest */,
 				92125BD32F2C5C1F0040E66B /* virtualkeyboardapp.app */,
 			);
 			name = Products;
@@ -185,6 +145,8 @@
 				92D0DFB32F2AFCC200628E3E /* AppleInternalUserClient.cpp */,
 				92D0DFB42F2AFCC200628E3E /* AppleInternalUserClient.hpp */,
 				922607A92F2A085A00CBF25C /* Info.plist */,
+				92125BE42F2C63140040E66B /* PS2EventInterceptor.cpp */,
+				92125BE52F2C63140040E66B /* PS2EventInterceptor.hpp */,
 			);
 			path = AppleInternalVirtualPS2;
 			sourceTree = "<group>";
@@ -214,6 +176,7 @@
 			files = (
 				922607B22F2A0DB100CBF25C /* AppleInternalIdentity.hpp in Headers */,
 				92D0DFBA2F2AFCEE00628E3E /* SharedTypes.hpp in Headers */,
+				92125BE72F2C63140040E66B /* PS2EventInterceptor.hpp in Headers */,
 				922607A62F2A085A00CBF25C /* AppleInternalVirtualPS2.hpp in Headers */,
 				92D0DFB62F2AFCC200628E3E /* AppleInternalUserClient.hpp in Headers */,
 			);
@@ -222,59 +185,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		92125B9C2F2C55FB0040E66B /* testui */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 92125BC52F2C55FD0040E66B /* Build configuration list for PBXNativeTarget "testui" */;
-			buildPhases = (
-				92125B992F2C55FB0040E66B /* Sources */,
-				92125B9A2F2C55FB0040E66B /* Frameworks */,
-				92125B9B2F2C55FB0040E66B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = testui;
-			productName = testui;
-			productReference = 92125B9D2F2C55FB0040E66B /* testui.app */;
-			productType = "com.apple.product-type.application";
-		};
-		92125BAC2F2C55FD0040E66B /* testuiTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 92125BC62F2C55FD0040E66B /* Build configuration list for PBXNativeTarget "testuiTests" */;
-			buildPhases = (
-				92125BA92F2C55FD0040E66B /* Sources */,
-				92125BAA2F2C55FD0040E66B /* Frameworks */,
-				92125BAB2F2C55FD0040E66B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				92125BAF2F2C55FD0040E66B /* PBXTargetDependency */,
-			);
-			name = testuiTests;
-			productName = testuiTests;
-			productReference = 92125BAD2F2C55FD0040E66B /* testuiTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		92125BB62F2C55FD0040E66B /* testuiUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 92125BC72F2C55FD0040E66B /* Build configuration list for PBXNativeTarget "testuiUITests" */;
-			buildPhases = (
-				92125BB32F2C55FD0040E66B /* Sources */,
-				92125BB42F2C55FD0040E66B /* Frameworks */,
-				92125BB52F2C55FD0040E66B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				92125BB92F2C55FD0040E66B /* PBXTargetDependency */,
-			);
-			name = testuiUITests;
-			productName = testuiUITests;
-			productReference = 92125BB72F2C55FD0040E66B /* testuiUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		92125BD22F2C5C1F0040E66B /* virtualkeyboardapp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92125BDF2F2C5C200040E66B /* Build configuration list for PBXNativeTarget "virtualkeyboardapp" */;
@@ -337,17 +247,6 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					92125B9C2F2C55FB0040E66B = {
-						CreatedOnToolsVersion = 14.3.1;
-					};
-					92125BAC2F2C55FD0040E66B = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = 92125B9C2F2C55FB0040E66B;
-					};
-					92125BB62F2C55FD0040E66B = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = 92125B9C2F2C55FB0040E66B;
-					};
 					92125BD22F2C5C1F0040E66B = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
@@ -374,36 +273,12 @@
 			targets = (
 				922607A12F2A085A00CBF25C /* AppleInternalVirtualPS2 */,
 				92D0DFBE2F2B028200628E3E /* test */,
-				92125B9C2F2C55FB0040E66B /* testui */,
-				92125BAC2F2C55FD0040E66B /* testuiTests */,
-				92125BB62F2C55FD0040E66B /* testuiUITests */,
 				92125BD22F2C5C1F0040E66B /* virtualkeyboardapp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		92125B9B2F2C55FB0040E66B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		92125BAB2F2C55FD0040E66B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		92125BB52F2C55FD0040E66B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		92125BD12F2C5C1F0040E66B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -423,27 +298,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		92125B992F2C55FB0040E66B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		92125BA92F2C55FD0040E66B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		92125BB32F2C55FD0040E66B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		92125BCF2F2C5C1F0040E66B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -461,6 +315,7 @@
 			files = (
 				922607A82F2A085A00CBF25C /* AppleInternalVirtualPS2.cpp in Sources */,
 				922607B12F2A0DB100CBF25C /* AppleInternalIdentity.cpp in Sources */,
+				92125BE62F2C63140040E66B /* PS2EventInterceptor.cpp in Sources */,
 				92D0DFB52F2AFCC200628E3E /* AppleInternalUserClient.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,148 +330,7 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		92125BAF2F2C55FD0040E66B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 92125B9C2F2C55FB0040E66B /* testui */;
-			targetProxy = 92125BAE2F2C55FD0040E66B /* PBXContainerItemProxy */;
-		};
-		92125BB92F2C55FD0040E66B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 92125B9C2F2C55FB0040E66B /* testui */;
-			targetProxy = 92125BB82F2C55FD0040E66B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		92125BBF2F2C55FD0040E66B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = testui/testui.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"testui/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Angus.testui;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/testui/YourProject-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		92125BC02F2C55FD0040E66B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = testui/testui.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"testui/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Angus.testui;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/testui/YourProject-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		92125BC12F2C55FD0040E66B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Angus.testuiTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testui.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/testui";
-			};
-			name = Debug;
-		};
-		92125BC22F2C55FD0040E66B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Angus.testuiTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testui.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/testui";
-			};
-			name = Release;
-		};
-		92125BC32F2C55FD0040E66B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Angus.testuiUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = testui;
-			};
-			name = Debug;
-		};
-		92125BC42F2C55FD0040E66B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Angus.testuiUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = testui;
-			};
-			name = Release;
-		};
 		92125BE02F2C5C200040E66B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -852,33 +566,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		92125BC52F2C55FD0040E66B /* Build configuration list for PBXNativeTarget "testui" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				92125BBF2F2C55FD0040E66B /* Debug */,
-				92125BC02F2C55FD0040E66B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		92125BC62F2C55FD0040E66B /* Build configuration list for PBXNativeTarget "testuiTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				92125BC12F2C55FD0040E66B /* Debug */,
-				92125BC22F2C55FD0040E66B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		92125BC72F2C55FD0040E66B /* Build configuration list for PBXNativeTarget "testuiUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				92125BC32F2C55FD0040E66B /* Debug */,
-				92125BC42F2C55FD0040E66B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		92125BDF2F2C5C200040E66B /* Build configuration list for PBXNativeTarget "virtualkeyboardapp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
